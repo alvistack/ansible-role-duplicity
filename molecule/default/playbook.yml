@@ -14,10 +14,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: apt
-  src: https://github.com/alvistack/ansible-role-apt
-  version: develop
+- hosts: all
+  remote_user: root
+  roles:
+    - role: apt
+    - role: yum
+    - role: duplicity
 
-- name: yum
-  src: https://github.com/alvistack/ansible-role-yum
-  version: develop
+- hosts: all
+  remote_user: root
+  tasks:
+    - name: duplicity --version
+      command: duplicity --version
+      register: result
+      changed_when: result is not succeeded
