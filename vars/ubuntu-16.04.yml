@@ -15,7 +15,7 @@
 # limitations under the License.
 
 _apt_repository:
-  { state: "present", repo: "ppa:duplicity-team/ppa" }
+  - { state: "present", repo: "ppa:duplicity-team/ppa" }
 
 _apt:
-  { state: "latest", name: "duplicity" }
+  - { state: "latest", name: "duplicity" }
