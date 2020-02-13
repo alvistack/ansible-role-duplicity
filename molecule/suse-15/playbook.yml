@@ -19,12 +19,3 @@
   become: true
   roles:
     - role: duplicity
-
-- hosts: all
-  remote_user: root
-  become: true
-  tasks:
-    - name: duplicity --version
-      command: duplicity --version
-      register: result
-      changed_when: result is not succeeded
