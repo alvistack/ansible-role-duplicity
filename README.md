@@ -8,6 +8,8 @@ license](https://img.shields.io/github/license/alvistack/ansible-role-duplicity.
 [![Ansible
 Role](https://img.shields.io/badge/galaxy-alvistack.duplicity-blue.svg)](https://galaxy.ansible.com/alvistack/duplicity)
 
+**[DEPRECATED] No checksum support, use restic instead.**
+
 Ansible Role for Duplicity Installation.
 
 ## Requirements
@@ -31,8 +33,7 @@ This role was designed for Ubuntu 16.04/18.04/19.10 or RHEL/CentOS 7 or openSUSE
 ## License
 
   - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC
-    BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
